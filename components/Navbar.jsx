@@ -12,11 +12,13 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-6 md:px-16 lg:px-32 py-3 border-b border-gray-300 text-gray-700">
       <Image
-        className="cursor-pointer w-28 md:w-32"
+        className="cursor-pointer w-[50px] md:w-[80px]"
         onClick={() => router.push('/')}
-        src={assets.logo}
+        src={assets.navlogo}
         alt="logo"
       />
+      <div><form action="">
+      <input className="border rounded-2xl " type="text" placeholder="Search your itams " /></form></div>
       <div className="flex items-center gap-4 lg:gap-8 max-md:hidden">
         <Link href="/" className="hover:text-gray-900 transition">
           Home
